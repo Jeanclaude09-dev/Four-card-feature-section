@@ -2,34 +2,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(design/fonts/Figtree\Fraunces\Inter\Montserrat\Outfit\etc/Figtree-Regular.ttf)
+    format("truetype");
 }
 
 main {
+  font-family: "Figtree", sans-serif;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   padding: 20px;
 }
 
 header {
   background-color: hsl(0, 0%, 100%);
-  padding: 20px;
   text-align: center;
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: clamp(1.8rem, 1.694rem + 0.451vw, 2.1rem);
+  /*font-size: 3.4rem;*/
   color: hsl(228, 45%, 44%);
   font-weight: 400;
 }
+.title-2 {
+  font-size: clamp(1.8rem, 1.694rem + 0.451vw, 2.1rem);
+
+  color: hsl(228, 45%, 44%);
+  font-weight: 700;
+}
 h2 {
-  font-size: 2.8rem;
+  /*font-size: 2.8rem;*/
   color: hsl(234, 12%, 34%);
-  font-weight: 500;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 p {
-  font-size: 1.5rem;
+  /*font-size: 1.5rem;*/
+}
+
+.description {
+  /*font-size: 2rem;*/
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+  margin-top: 10px;
+  text-overflow: wrap;
+  line-height: 1.5;
 }
 
 .cards {
@@ -38,39 +60,75 @@ p {
   justify-content: center;
   align-items: center;
   column-gap: 20px;
+  padding: 30px 5.5rem;
 }
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    padding: 20px 10px;
+  }
+  .cards {
+    padding: 30px;
+  }
+}
+
 #card-container-supervisor {
   display: flex;
   flex-direction: column;
+  padding: 30px;
   border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(246, 80%, 60%);
   margin-top: 20px;
-  box-shadow: 0 16px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 #card-container-team-builder {
   display: flex;
   flex-direction: column;
+  padding: 30px;
   border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(0, 78%, 62%);
   margin-top: 20px;
-  box-shadow: 0 16px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 #card-container-karma {
   display: flex;
   flex-direction: column;
+  padding: 30px;
   border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(34, 97%, 64%);
   margin-top: 20px;
-  box-shadow: 0 16px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 
 #card-container-calculator {
   display: flex;
   flex-direction: column;
+  padding: 30px;
   border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(212, 86%, 64%);
   margin-top: 20px;
-  box-shadow: 0 16px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .attribution {
