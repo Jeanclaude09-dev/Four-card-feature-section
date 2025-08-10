@@ -1,3 +1,14 @@
+:root {
+  /* Color Variables */
+  --Cyan: hsl(180, 62%, 55%);
+  --red: hsl(0, 78%, 62%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --White: hsl(0, 0%, 100%);
+  --Grey400: hsl(212, 6%, 44%);
+  --Grey500: hsl(234, 12%, 34%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,23 +29,23 @@ main {
 }
 
 header {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--White);
   text-align: center;
 }
 
 h1 {
   font-size: clamp(1.8rem, 1.694rem + 0.451vw, 2.1rem);
-  color: rgb(76, 78, 97);
+  color: var(--Grey500);
   font-weight: 400;
 }
 .title-2 {
   font-size: clamp(1.8rem, 1.694rem + 0.451vw, 2.1rem);
-  color: rgb(76, 78, 97);
+  color: var(--Grey500);
   font-weight: 700;
 }
 h2 {
   font-size: 1.5rem;
-  color: rgb(76, 78, 97);
+  color: var(--Grey500);
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -45,7 +56,7 @@ p {
 .description {
   margin: 15px auto 0;
   text-align: center;
-  color: rgb(76, 78, 97);
+  color: var(--Grey500);
   font-weight: 500;
   margin-top: 10px;
   text-overflow: wrap;
@@ -82,7 +93,7 @@ p {
   border: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-top: 5px solid hsl(246, 80%, 60%);
+  border-top: 5px solid var(--Cyan);
   margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
@@ -93,7 +104,7 @@ p {
   border: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-top: 5px solid hsl(0, 78%, 62%);
+  border-top: 5px solid var(--red);
   margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
@@ -104,7 +115,7 @@ p {
   border: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-top: 5px solid hsl(34, 97%, 64%);
+  border-top: 5px solid var(--Orange);
   margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
@@ -116,7 +127,7 @@ p {
   border: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-top: 5px solid hsl(212, 86%, 64%);
+  border-top: 5px solid var(--Blue);
   margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
