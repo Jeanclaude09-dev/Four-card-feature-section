@@ -132,12 +132,9 @@ p {
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 
-.icon-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 20px 0;
-  width: 100%;
+.icon {
+  display: block;
+  margin: 15px 0 0 auto;
 }
 
 .attribution {
