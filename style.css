@@ -24,7 +24,6 @@ header {
 
 h1 {
   font-size: clamp(1.8rem, 1.694rem + 0.451vw, 2.1rem);
-  /*font-size: 3.4rem;*/
   color: rgb(76, 78, 97);
   font-weight: 400;
 }
@@ -34,20 +33,20 @@ h1 {
   font-weight: 700;
 }
 h2 {
-  /*font-size: 2.8rem;*/
+  font-size: 1.5rem;
   color: rgb(76, 78, 97);
   font-weight: 700;
   margin-bottom: 10px;
 }
 p {
-  /*font-size: 1.5rem;*/
+  font-size: 0.9375rem;
 }
 
 .description {
-  /*font-size: 2rem;*/
   margin: 15px auto 0;
   text-align: center;
-  color: hsl(234, 12%, 34%);
+  color: rgb(76, 78, 97);
+  font-weight: 500;
   margin-top: 10px;
   text-overflow: wrap;
   line-height: 1.5;
@@ -84,6 +83,7 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(246, 80%, 60%);
+  margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 #card-container-team-builder {
@@ -94,6 +94,7 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(0, 78%, 62%);
+  margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 #card-container-karma {
@@ -104,6 +105,7 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(34, 97%, 64%);
+  margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -115,6 +117,7 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: 5px solid hsl(212, 86%, 64%);
+  margin-top: 20px;
   box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 
